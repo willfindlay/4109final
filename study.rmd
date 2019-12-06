@@ -86,39 +86,39 @@ Zero Knowledge Proofs & ($5\%$) &2\\
 \end{tabular}
 \end{table}
 
-# Notes
+\part{Notes}
 
-## Midterm 1
+# Midterm 1
 
-### Classical Crypto
+## Classical Crypto
 
-### Secret Key Crypto
+## Secret Key Crypto
 
-### Security Models and Goals
+## Security Models and Goals
 
-## Midterm 2
+# Midterm 2
 
-### Public Key Crypto
+## Public Key Crypto
 
-### Hash Functions
+## Hash Functions
 
-### Hashes/MACs/DSS
+## Hashes/MACs/DSS
 
-## Post-Midterms
+# Post-Midterms
 
-### Secret Sharing
+## Secret Sharing
 
-### WEP
+## WEP
 
-### Secure Internet Connections
+## Secure Internet Connections
 
-### Zero Knowledge Proofs
+## Zero Knowledge Proofs
 
-# Practice Questions
+\part{Practice Questions}
 
-## Provided Multiple Choice Questions
+# Provided Multiple Choice Questions
 
-## Custom Multiple Choice Questions
+# Custom Multiple Choice Questions
 
 <!-- References -->
 \clearpage
