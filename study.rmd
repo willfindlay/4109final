@@ -118,7 +118,95 @@ Zero Knowledge Proofs & ($5\%$) &2\\
 
 # Provided Multiple Choice Questions
 
+1. A stream cipher provides which of the following?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. The security of RSA is believed to be based on...
+    (a) The difficulty of factoring the modulus
+    (a) The computational DH problem
+    (a) The discrete log problem
+    (a) B and C
+    (a) None of the above
+\vskip 1em
+1. What is $17^{122} \bmod 23$?
+    (a) $17 \times 122 \bmod 23$
+    (a) $17^{7} \bmod 23$
+    (a) $17^{12} \bmod 23$
+    (a) $17^{12} \bmod 22$
+    (a) None of the above
+\vskip 1em
+1. Consider the following ciphertext $c = \text{wud}$. The shift (Caesar) cipher was used. What is the plaintext?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. Changing a single bit of the plaintext should change about 1/2 the bits of the ciphertext?
+What security goal is this?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. What information does a collision reveal when using ECB (electronic code book)? When $c_i = c_j$, what do we know?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. Which of the following does a MAC provide that a hash function does not?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. Assume the padding scheme outlined in class for CBC mode. The cipher has block length 2 bytes.
+How do we pad the following plaintext? `a1 b2 33 12`
+    (a) Append `0a` 4 times
+    (a) Append `0a` 2 times
+    (a) Append `00` 2 times
+    (a) Do nothing
+    (a) None of the above
+\vskip 1em
+
+For the next two questions, consider the following connection encrypted line:
+\begin{center}
+\lstinline{TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, 256 bit keys, TLS 1.2}
+\end{center}
+
+9. Which digital signature scheme is used?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. Which security protocol is used?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+
 # Custom Multiple Choice Questions
+
+<!--
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+-->
 
 <!-- References -->
 \clearpage
