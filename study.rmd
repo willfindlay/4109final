@@ -1,0 +1,104 @@
+---
+author: |
+    | William Findlay
+title: |
+    | COMP4109 Final Exam Practice
+date: \today
+#bibliography: untitled.bib
+biblio-style: ieee
+subparagraph: yes
+classoption: 12pt
+header-includes:
+    - \usepackage{findlayrmd}
+output:
+    pdf_document:
+        citation_package: biblatex
+        number_sections: true
+        fig_crop: true
+        fig_caption: true
+        keep_tex: false
+        pandoc_args: ["--listings"]
+---
+```{r,include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+options(kableExtra.latex.load_packages = FALSE)
+library(kableExtra)
+library(lubridate)
+```
+<!-- Setup -->
+\pagestyle{fancy}
+\setlength{\headheight}{15pt}
+\counterwithin{lstlisting}{section}
+\renewcommand{\maketitle}{\oldmaketitle}
+
+<!-- Title page -->
+\maketitle
+\thispagestyle{empty}
+
+<!-- Table of contents -->
+\newpage
+\pagenumbering{roman}
+\tableofcontents
+
+<!-- List of figs, tables, listings -->
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
+\lstlistoflistings
+
+<!-- Setup the rest of the document -->
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+# List of Topics
+
+\begin{table}
+\caption[Topics for the final]{Topics for the final with percentages and approximate number of questions.\newline
+N.b.\ total number of questions is 44, but total approximate only adds up to 39.}
+\begin{tabular}{|c|l|l|}
+\hline
+\textbf{Topic} & \textbf{Percentage} & \textbf{$\approx$ Questions}\\
+\hline
+\hline
+Classical Crypto & ($10\%$) & 4\\
+\hline
+Secret Key Crypto & ($10\%$) & 4\\
+\hline
+Security Models and Goals & ($18\%$) & 8\\
+\hline
+Public Key Crypto and Efficiency & ($15\%$) &7\\
+\hline
+Hash Functions & ($7\%$) &3\\
+\hline
+Hashes/MACs/DSS & ($10\%$) &4\\
+\hline
+Secret Sharing & ($2\%$) &1\\
+\hline
+WEP & ($5\%$) &2\\
+\hline
+Secure Internet Connections & ($10\%$) &4\\
+\hline
+Zero Knowledge Proofs & ($5\%$) &2\\
+\hline
+\end{tabular}
+\end{table}
+
+# Notes
+
+## Midterm 1
+
+## Midterm 2
+
+## Post-Midterms
+
+# Practice Questions
+
+## Provided Multiple Choice Questions
+
+## Custom Multiple Choice Questions
+
+<!-- References -->
+\clearpage
