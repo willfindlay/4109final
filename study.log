@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.12.3)  6 DEC 2019 20:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.12.3)  7 DEC 2019 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1782,63 +1782,65 @@ Package microtype Info: Character `029' is missing
 \tf@lol=\write9
 \openout9 = `study.lol'.
 
-[4]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) h
-as been already used, duplicate ignored
+[4]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+80.
+(/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.200     I
-           ndistinguishability [1] [2]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-19.
+l.185     c
+           onfidentiality (nope) [1] [2] [3]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
+28.
 (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [3]
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 327.
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 327.
-[4]
+) [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
 
-LaTeX Warning: Empty bibliography on input line 390.
+LaTeX Warning: Empty bibliography on input line 1231.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 393.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 393.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1234.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1234.
 (./study.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 393.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 393.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1234.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1234.
+
 Package rerunfilecheck Info: File `study.out' has not changed.
 (rerunfilecheck)             Checksum: ABBF310194B4D72CA98681E414B6F28D;2568.
 Package logreq Info: Writing requests to 'study.run.xml'.
 \openout1 = `study.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 393.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1234.
  ) 
 Here is how much of TeX's memory you used:
- 49134 strings out of 492167
- 902714 string characters out of 6131558
- 1443416 words of memory out of 5000000
- 52671 multiletter control sequences out of 15000+600000
- 611952 words of font info for 90 fonts, out of 8000000 for 9000
+ 49526 strings out of 492167
+ 906288 string characters out of 6131558
+ 1448416 words of memory out of 5000000
+ 52692 multiletter control sequences out of 15000+600000
+ 605705 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,11n,71p,1194b,1325s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,11n,71p,1194b,1301s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fo
-nts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.
-enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf-d
-ist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/
-lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/shar
-e/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb>
-</usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/f
-onts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr
-17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-
-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public
-/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/lm/lmtt10.pfb>
-Output written on study.pdf (9 pages, 296052 bytes).
+nts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.
+enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-d
+ist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/lm/
+lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/
+texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1
+/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></
+usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr17
+.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-di
+st/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/l
+m/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1
+/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbol
+s/msam10.pfb>
+Output written on study.pdf (19 pages, 287395 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
- 104 named destinations out of 1000 (max. 500000)
+ 792 PDF objects out of 1000 (max. 8388607)
+ 748 compressed objects within 8 object streams
+ 474 named destinations out of 1000 (max. 500000)
  16541 words of extra memory for PDF output out of 17280 (max. 10000000)
 

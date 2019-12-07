@@ -110,6 +110,39 @@ Zero Knowledge Proofs & ($5\%$) &2\\
 
 ## WEP
 
+- security goals
+    - confidentiality (nope)
+    - access control (nope)
+    - data integrity (nope)
+- how it works
+    - random 24-bit IV $v$
+    - compute 32-bit checksum of $m$
+    - $c = \text{RC4}(v, k) \oplus (m || \text{checksum}(m))$
+- many problems
+    - $\text{RC4}(v, k)$ not good due to $k$ and $v$ themselves (without even exploiting how crappy RC4 is)
+        - really only depends on $v$
+        - because $k$ rarely changes and is often shared by everyone in LAN
+        - guaranteed collision in $v$ after $\approx$ 16 millions transmissions
+        - birthday attack on random $v$ only needs 4096
+        - $v$ often tracked with counter and reset when device is started
+        - so small $v$ $\implies$ lots of collisions
+    - collision + KPA means:
+        - if we have $<v,c>$, we can decrypt $<v, c'>$ if we can find a collision in $v$
+    - decryption dictionary
+        - $\text{RC4}(v_i, k)$, watch transmissions in the network
+        - full dictionary only needs 24GB of space
+    - malleability
+        - message modification is easy since checksums suck
+        - only good at detecting one or two flipped bits, errors can cancel each other
+    - authentication spoofing
+        - base station sends plaintext challenge $z$
+        - client sends back the WEP encryption of $z$
+        - observer has the plaintext, ciphertext pair for free
+    - double encryption
+        - you can just send $q$ to yourself from another station
+        - oracle encrypts $q', v' = \text{WEP}(q)$
+        - if $v = v'$, we can decrypt $q'$ to $q$
+
 ## Secure Internet Connections
 
 ## Zero Knowledge Proofs
@@ -122,11 +155,11 @@ Zero Knowledge Proofs & ($5\%$) &2\\
     (a) Indistinguishability
     (a) Unpredictability
     (a) Synchronicity
-    (a) **A and B**
+    (a) A and B
     (a) None of the above
 \vskip 1em
 1. The security of RSA is believed to be based on...
-    (a) **The difficulty of factoring the modulus**
+    (a) The difficulty of factoring the modulus
     (a) The computational DH problem
     (a) The discrete log problem
     (a) B and C
@@ -135,7 +168,7 @@ Zero Knowledge Proofs & ($5\%$) &2\\
 1. What is $17^{122} \bmod 23$?
     (a) $17 \times 122 \bmod 23$
     (a) $17^{7} \bmod 23$
-    (a) $\textbf{17}^{\textbf{12}} \textbf{ mod } \textbf{23}$
+    (a) $17^{12} \bmod  23$
     (a) $17^{12} \bmod 22$
     (a) None of the above
 \vskip 1em
@@ -143,12 +176,12 @@ Zero Knowledge Proofs & ($5\%$) &2\\
     (a) foo
     (a) the
     (a) ack
-    (a) **gen**
+    (a) gen
     (a) None of the above
 \vskip 1em
 1. Changing a single bit of the plaintext should change about 1/2 the bits of the ciphertext?
 What security goal is this?
-    (a) **Diffusion**
+    (a) Diffusion
     (a) Confusion
     (a) Unpredictability
     (a) Non-Malleability
@@ -159,19 +192,19 @@ What security goal is this?
     (a) It reveals the contents of all the blocks
     (a) It causes an existential forgery
     (a) It leaks information about the secret key
-    (a) **None of the above**
+    (a) None of the above
 \vskip 1em
 1. Which of the following does a MAC provide that a hash function does not?
     (a) Data origin authentication (anyone)
     (a) Data integrity authentication (those with the key)
-    (a) **Data origin authentication (those with the key)**
+    (a) Data origin authentication (those with the key)
     (a) Non-repudiation (those with the key)
     (a) None of the above
 \vskip 1em
 1. Assume the padding scheme outlined in class for CBC mode. The cipher has block length 2 bytes.
 How do we pad the following plaintext? `a1 b2 33 12`
     (a) Append `0a` 4 times
-    (a) **Append `0a` 2 times**
+    (a) Append `0a` 2 times
     (a) Append `00` 2 times
     (a) Do nothing
     (a) None of the above
@@ -186,12 +219,12 @@ For the next two questions, consider the following connection encrypted line:
     (a) ECDHE
     (a) RSA
     (a) AES
-    (a) **SHA384**
+    (a) SHA384
     (a) None of the above
 \vskip 1em
 1. Which security protocol is used?
     (a) ECDHE
-    (a) **TLS 1.2**
+    (a) TLS 1.2
     (a) AES
     (a) GCM
     (a) None of the above
@@ -207,6 +240,427 @@ For the next two questions, consider the following connection encrypted line:
     (a) None of the above
 \vskip 1em
 -->
+
+1. Which of the following is not a security flaw in WEP?
+    (a) Easy to find collisions in $v$
+    (a) $k$ is often shared across the entire LAN
+    (a) An attacker can mount a chosen plaintext attack by sending $m$ to himself
+    (a) An attacker can mount a known plaintext attack by finding a collision in $v$
+    (a) All of the above are security flaws in WEP
+\vskip 1em
+1. How does WEP encrypt messages?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
 
 <!-- References -->
 \clearpage
