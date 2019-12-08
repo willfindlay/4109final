@@ -655,157 +655,188 @@ For the next two questions, consider the following connection encrypted line:
     (a) None of the above
 \vskip 1em
 1. What is the cryptographic significance of the Euclidean Algorithm?
-    (a)
-    (a)
-    (a)
-    (a)
+    (a) Helps us calculate $N$
+    (a) Helps us calculate $p, q$
+    (a) Helps us calculate $\phi(N)$
+    (a) Forms the basis for Wiener's attack
     (a) None of the above
 \vskip 1em
 1. What is the cryptographic significance of the Extended Euclidean Algorithm?
-    (a)
-    (a)
-    (a)
-    (a)
+    (a) Good for fast modular exponentiation
+    (a) Helps us find modular inverse
+    (a) Forms the basis for Wiener's attack
+    (a) An integral part of the meet in the middle attack on 2DES
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following describes Wiener's attack?
+    (a) Attempts to find $k$ in ElGamal
+    (a) Attempts to find $d$ in RSA
+    (a) Attempts to find $p, q$ in RSA
+    (a) Attempts to find $a$ in ElGamal
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Generation in ElGamal involves which of the following?
+    (a) Finding two primes $p, q$ such that $p = 2q + 1$
+    (a) Finding two random large primes
+    (a) Computing $a, b$ such that $a, b$ are primitive elements in $\mathbb{Z}_p^*$
+    (a) Finding $e, d$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Generation in ElGamal involves which of the following?
+    (a) Factoring the modulus
+    (a) Finding a generator $g$ in $\mathbb{Z}_p^*$ and computing $g^a \bmod p$ for random $a$
+    (a) Finding a three-tuple of efficient equations
+    (a) Finding $a, b$ such that $a$ and $b$ are coprime
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is a primitive element in $\mathbb{Z}_p^*$?
+    (a) An element with order equal to the size of the group
+    (a) An element equal to $1 \bmod p$
+    (a) A prime number in the group
+    (a) The $p$ in $\mathbb{Z}_p^*$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is a generator in $\mathbb{Z}_p^*$?
+    (a) An element with order equal to the size of the group
+    (a) An element equal to $1 \bmod p$
+    (a) A prime number in the group
+    (a) The $p$ in $\mathbb{Z}_p^*$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is $\phi(37)$?
+    (a) 4
+    (a) 38
+    (a) 36
+    (a) 12
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is $\phi(45)$?
+    (a) 44
+    (a) 16
+    (a) 24
+    (a) 12
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following is not a security property of cryptographic hash functions?
+    (a) Weak collision resistance
+    (a) Preimage resistance
+    (a) Collision resistance
+    (a) Second preimage resistance
+    (a) All of the above **are** security properties of cryptographic hash functions
+\vskip 1em
+1. Which of the following describes preimage resistance?
+    (a) Hard to find any $m' \ne m$ such that $H(m) = H(m')$
+    (a) Hard to find $m' \ne m$ given $m$ such that $H(m) = H(m')$
+    (a) Hard to find $H(H(m))$
+    (a) Hard to find $m$ given $H(m)$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following describes second preimage resistance?
+    (a) Hard to find any $m' \ne m$ such that $H(m) = H(m')$
+    (a) Hard to find $m' \ne m$ given $m$ such that $H(m) = H(m')$
+    (a) Hard to find $H(H(m))$
+    (a) Hard to find $m$ given $H(m)$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following describes collision resistance?
+    (a) Hard to find any $m' \ne m$ such that $H(m) = H(m')$
+    (a) Hard to find $m' \ne m$ given $m$ such that $H(m) = H(m')$
+    (a) Hard to find $H(H(m))$
+    (a) Hard to find $m$ given $H(m)$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What type of forgery might you create given a hash function that has all security properties except second preimage resistance?
+    (a) Selective
+    (a) Perfect
+    (a) Existential
+    (a) Universal
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What type of forgery might you create given a hash function that has no collision resistance?
+    (a) Selective
+    (a) Perfect
+    (a) Existential
+    (a) Universal
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What type of forgery might you create given a hash function that always returns the first $x$ bytes of $m$?
+    (a) Selective
+    (a) Perfect
+    (a) Existential
+    (a) Universal
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following is impossible for a hash function?
+    (a) It never returns `10101` for any message
+    (a) It returns `10101` for one message and `1010101` for another
+    (a) It always returns the first $x$ bytes of the message
+    (a) It returns `10101` for one message and `10101` for another
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. All hash functions have which of the following properties?
+    (a) Preimage resistance, second preimage resistance, collision resistance
+    (a) Compression and extension
+    (a) Compression and difficulty of computation
+    (a) Compression and ease of computation
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. All cryptographic hash functions have which of the following properties in addition to the properties of hash functions?
+    (a) The ability use them to encrypt data
+    (a) Preimage resistance, second preimage resistance, collision resistance
+    (a) The ability to create inverse hashes
+    (a) Extension and difficulty of reversal
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. If $H(x) = f(g(x)||g(x))$ is collision resistant, which of the following must be true? Select the **most complete answer**.
+    (a) $g$ is collision resistant
+    (a) Neither $f$ nor $g$ is necessarily collision resistant
+    (a) $f$ is collision resistant
+    (a) Both $f$ and $g$ are collision resistant
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. If we have $H(m)$ that always returns the first $x$ bytes of $m$,
+how many of the three properties of cryptographic hash functions are broken?
+    (a) 0
+    (a) 1
+    (a) 2
+    (a) 3
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. A function defined as $H(x) = 10101$ is a hash function.
+    (a) True
+    (a) False
+\vskip 1em
+1. A function defined as $H(x) = 10101$ is a cryptographic hash function.
+    (a) True
+    (a) False
+\vskip 1em
+1. A function defined as $H(x) = x$ is a hash function.
+    (a) True
+    (a) False
+\vskip 1em
+1. A function defined as $H(x) = x$ is a cryptographic hash function.
+    (a) True
+    (a) False
+\vskip 1em
+1. How many hashes do we need to store at any given time in the Rho method of finding collisions?
+    (a) 2
+    (a) 4
+    (a) 20
+    (a) 56
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What does a length extension attack allow us to do?
+    (a) Create an existential forgery
+    (a) Create the hash of a message that we do not explicitly know
+    (a) Defeat MD5
+    (a) All of the above
+    (a) None of the above
+\vskip 1em
+1. What is the problem with Merkle-Damgard constructions?
+    (a) They have limited compression
+    (a) They are not really hash functions
+    (a) They are susceptible to length extension attacks
+    (a) They allow universal forgeries
     (a) None of the above
 \vskip 1em
 1. This is a template question?
