@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.12.3)  7 DEC 2019 21:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.12.3)  7 DEC 2019 21:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1797,29 +1797,30 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
 28.
 (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
+) [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20
+]
 
-LaTeX Warning: Empty bibliography on input line 1519.
+LaTeX Warning: Empty bibliography on input line 2030.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1522.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1522.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2033.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2033.
 (./study.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1522.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1522.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2033.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2033.
 
 Package rerunfilecheck Info: File `study.out' has not changed.
 (rerunfilecheck)             Checksum: ABBF310194B4D72CA98681E414B6F28D;2568.
 Package logreq Info: Writing requests to 'study.run.xml'.
 \openout1 = `study.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1522.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2033.
  ) 
 Here is how much of TeX's memory you used:
- 49556 strings out of 492167
- 906581 string characters out of 6131558
+ 49785 strings out of 492167
+ 908414 string characters out of 6131558
  1468416 words of memory out of 5000000
  52696 multiletter control sequences out of 15000+600000
- 606620 words of font info for 92 fonts, out of 8000000 for 9000
+ 606711 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,11n,71p,1194b,1308s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fo
@@ -1837,11 +1838,12 @@ lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/
 texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/
 public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></u
 sr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on study.pdf (20 pages, 337749 bytes).
+ts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/symbols/msbm10.pfb>
+Output written on study.pdf (25 pages, 351827 bytes).
 PDF statistics:
- 826 PDF objects out of 1000 (max. 8388607)
- 779 compressed objects within 8 object streams
- 493 named destinations out of 1000 (max. 500000)
+ 1120 PDF objects out of 1200 (max. 8388607)
+ 1064 compressed objects within 11 object streams
+ 720 named destinations out of 1000 (max. 500000)
  16541 words of extra memory for PDF output out of 17280 (max. 10000000)
 

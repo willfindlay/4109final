@@ -563,6 +563,265 @@ For the next two questions, consider the following connection encrypted line:
     (a) Given $(p, g, g^a, b)$, try to compute $g^{ab} \bmod p$
     (a) None of the above
 \vskip 1em
+1. The security of Diffie-Hellman relies on which of the following?
+    (a) Discrete log problem
+    (a) Computational Diffie-Hellman problem
+    (a) Decisional Diffie-Hellman problem
+    (a) B and C
+    (a) All of the above
+\vskip 1em
+1. In Diffie-Hellman, what is public information?
+    (a) $g, p, g^a, g^b$
+    (a) $g, p, a, b$
+    (a) $g, p$
+    (a) $g^a, g^b$
+    (a) None of the above
+\vskip 1em
+1. Which of the below corresponds to a vulnerability of Diffie-Hellman?
+    (a) Ciphertext stealing
+    (a) Existential forgery
+    (a) Meet in the middle
+    (a) Man in the middle
+    (a) None of the above
+\vskip 1em
+1. What is the definition of a public key encryption scheme?
+    (a) Five-tuple: $K,P,C,E,D$
+    (a) Three-tuple: $K,P,C$
+    (a) Three efficient algorithms: $G,E_e,D_d$
+    (a) An encryption scheme where the key is always public
+    (a) None of the above
+\vskip 1em
+1. Which of the following is not a public key encryption scheme?
+    (a) RSA
+    (a) ElGamal
+    (a) Diffie-Hellman
+    (a) All of the above are public key encryption schemes
+    (a) None of the above are public key encryption schemes
+\vskip 1em
+1. When $N=pq$, where $p,q$ are prime, what is $\phi(N)$?
+    (a) Undefined
+    (a) $N-1$
+    (a) $(p-1)(q-1)$
+    (a) $1$
+    (a) None of the above
+\vskip 1em
+1. When $n$ is prime, what is $\phi(n)$?
+    (a) Undefined
+    (a) $n$
+    (a) $0$
+    (a) $n-1$
+    (a) none of the above
+\vskip 1em
+1. How do we calculate $e, d$ in RSA?
+    (a) Find $e, d$ such that $ed \equiv 1 \bmod \phi(N)$
+    (a) Find $e, d$ such that $ed \equiv 0 \bmod \phi(N)$
+    (a) Find $e, d$ such that $ed \equiv 0 \bmod N$
+    (a) Find $e, d$ such that $ed \equiv 1 \bmod N$
+    (a) None of the above
+\vskip 1em
+1. How do we calculate $N$ in RSA?
+    (a) Take $N=ed$
+    (a) Take $N=pq$ where $p, q$ are two large random numbers
+    (a) Take $N=pq$ where $p, q$ are two large primes
+    (a) Take $N$ as some random large number
+    (a) None of the above
+\vskip 1em
+1. Which of the following would yield $m$ in RSA?
+    (a) $(m^d)^e \bmod N$
+    (a) $c^d \bmod \phi(N)$
+    (a) $(m^e)^e \bmod N$
+    (a) $(m^e)^d \bmod N$
+    (a) None of the above
+\vskip 1em
+1. What is our public key in RSA?
+    (a) $(e, N)$
+    (a) $(e, p, q)$
+    (a) $(e, \phi(N))$
+    (a) $(d, N)$
+    (a) None of the above
+\vskip 1em
+1. What is our private key in RSA?
+    (a) $(d, \phi(N))$
+    (a) $(d, N)$
+    (a) $(d, p, q)$
+    (a) $(e, N)$
+    (a) None of the above
+\vskip 1em
+1. What is a generator in $\mathbb{Z}_p^*$?
+    (a) Some integer in the group that can create every other group member when raised to various powers
+    (a) Any member of the group
+    (a) A way of creating other groups
+    (a) The source of the group's power
+    (a) None of the above
+\vskip 1em
+1. What is the cryptographic significance of the Euclidean Algorithm?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. What is the cryptographic significance of the Extended Euclidean Algorithm?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1. This is a template question?
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
 1. This is a template question?
     (a)
     (a)
