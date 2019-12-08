@@ -203,8 +203,8 @@ What security goal is this?
 \vskip 1em
 1. Assume the padding scheme outlined in class for CBC mode. The cipher has block length 2 bytes.
 How do we pad the following plaintext? `a1 b2 33 12`
-    (a) Append `0a` 4 times
-    (a) Append `0a` 2 times
+    (a) Append `02` 4 times
+    (a) Append `02` 2 times
     (a) Append `00` 2 times
     (a) Do nothing
     (a) None of the above
@@ -246,300 +246,321 @@ For the next two questions, consider the following connection encrypted line:
     (a) $k$ is often shared across the entire LAN
     (a) An attacker can mount a chosen plaintext attack by sending $m$ to himself
     (a) An attacker can mount a known plaintext attack by finding a collision in $v$
-    (a) All of the above are security flaws in WEP
+    (a) All of the above **are** security flaws in WEP
 \vskip 1em
 1. How does WEP encrypt messages?
-    (a)
-    (a)
-    (a)
-    (a)
+    (a) $\text{RC4}(\text{checksum}(m), k) \oplus (v || m)$
+    (a) WEP does not encrypt messages
+    (a) $\text{RSA}(v, k) \oplus (m || \text{checksum}(m))$
+    (a) $\text{RC4}(v, k) \oplus (m || \text{checksum}(m))$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which security goal of WEP is broken by the ability to easily find collisions in $v$?
+    (a) Indistinguishability
+    (a) Confidentiality
+    (a) Access control
+    (a) Data integrity
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. How many bits is $v$ in WEP?
+    (a) 32
+    (a) 8
+    (a) 48
+    (a) 24
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. How many bits is the checksum in WEP?
+    (a) 32
+    (a) 8
+    (a) 48
+    (a) 24
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Why are checksums not a good choice for data integrity in WEP?
+    (a) Vulnerable to an addition attack
+    (a) Easily malleable
+    (a) Errors can cancel
+    (a) B and C
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following is not a security goal of WEP?
+    (a) Confidentiality
+    (a) Data integrity
+    (a) Indistinguishability
+    (a) Access control
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is the definition of a symmetric key encryption scheme?
+    (a) Three efficient algorithms: $G,E_e,D_d$
+    (a) Five-tuple: $K,P,C,E,D$
+    (a) An encryption scheme where the key is always the same size
+    (a) Three-tuple: $K,P,C$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. A \_\_\_\_\_\_\_\_\_\_ allows us to encrypt messages longer than the plaintext length.
+    (a) Symmetric key encryption scheme
+    (a) Block cipher
+    (a) Mode of operation
+    (a) Public key encryption scheme
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is the plaintext length in an unmodified Caesar cipher?
+    (a) The key length
+    (a) Any size
+    (a) 26
+    (a) 1
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is the plaintext length in an unmodified Vigen&egrave;re cipher?
+    (a) The key length
+    (a) Any size
+    (a) 26
+    (a) 1
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. How is a Vigen&egrave;re cipher similar to one-time pad?
+    (a) One-time pad is like Vigen&egrave;re except it has key length = plaintext length
+    (a) They are the same thing
+    (a) One-time pad is like Vigen&egrave;re except the key changes each time
+    (a) A and C
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. The one-time pad \_\_\_\_\_\_\_\_\_\_.
+    (a) Is unconditionally secure
+    (a) Provides perfect secrecy
+    (a) Is extremely efficient
+    (a) A and B
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following is a problem with the one time pad?
+    (a) It is malleable
+    (a) It is vulnerable to chosen plaintext attacks
+    (a) It can only be used for very large messages
+    (a) The keyspace is finite
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following symmetric key encryption schemes provides information theoretic security IND-KPA?
+    (a) AES in CBC mode
+    (a) Affine cipher
+    (a) One-time pad
+    (a) AES in CTR mode
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following is not a security goal?
+    (a) Non-malleability
+    (a) Access control
+    (a) Indistinguishability
+    (a) Data integrity
+    (a) All of the above **are** security goals
+\vskip 1em
+1. Which of the following is not an attack model?
+    (a) Known plaintext attack
+    (a) Chosen plaintext attack
+    (a) Ciphertext only attack
+    (a) Chosen message attack
+    (a) All of the above **are** attack models
+\vskip 1em
+1. Which of the following is not a security level?
+    (a) Complexity theoretic
+    (a) Polynomial
+    (a) Computational
+    (a) Information theoretic
+    (a) All of the above **are** security levels
+\vskip 1em
+1. An attacker knows one or more plaintext, ciphertext pairs and tries to find $k$. What attack is this?
+    (a) Chosen plaintext attack
+    (a) Ciphertext only attack
+    (a) Known plaintext attack
+    (a) Ciphertext stealing
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. An attacker has access to an oracle that can encrypt messages. What attack is this?
+    (a) Chosen plaintext attack
+    (a) Ciphertext only attack
+    (a) Known plaintext attack
+    (a) Ciphertext stealing
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. An attacker tries to decrypt ciphertext with no other information. What attack is this?
+    (a) Chosen plaintext attack
+    (a) Ciphertext only attack
+    (a) Known plaintext attack
+    (a) Ciphertext stealing
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following best describes unicity distance?
+    (a) The number of times you have to encrypt random plaintext before getting a collision in the ciphertext
+    (a) The theoretical complexity difference between two encryption schemes
+    (a) The expected minimum ciphertext length required to uniquely compute the key
+    (a) The size of a given ciphertext space
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is a spurious key?
+    (a) A key that does not exist in our keyspace
+    (a) A key that uniquely maps plaintext to a given ciphertext
+    (a) Another key that decrypts ciphertext to an alternative, yet valid, plaintext
+    (a) A key that results in gibberish decryption
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. If $c = \texttt{Dpssphtzbe}$ is the ciphertext generated by one-time pad, what is the corresponding plaintext?
+    (a) `Andybuigod`
+    (a) `Triisgreat`
+    (a) `Williamsux`
+    (a) `Amandabest`
+    (a) Not enough information
+\vskip 1em
+1. If $c = \texttt{Dpssphtzbe}$ is the ciphertext generated by one-time pad, what is the corresponding plaintext?
+    (a) `Andybuigod`
+    (a) `Triisgreat`
+    (a) `Williamsux`
+    (a) `Amandabest`
+    (a) Not enough information
+\vskip 1em
+1. Which of the following is the current standard for block ciphers?
+    (a) 2DES
+    (a) 3DES
+    (a) AES
+    (a) DES
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. A meet in the middle attack reduces 2DES from \_\_\_\_\_\_\_\_\_\_ to \_\_\_\_\_\_\_\_\_\_.
+    (a) An NP-Hard problem, a P problem
+    (a) 128 bit block length, 112 bit effective block length
+    (a) 112 bit block length, 57 bit effective block length
+    (a) 64 bit block length, 60 bit effective block length
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. A meet in the middle attack reduces 3DES from \_\_\_\_\_\_\_\_\_\_ to \_\_\_\_\_\_\_\_\_\_.
+    (a) An NP-Complete problem, an NP-Hard problem
+    (a) 168 bit block length, 57 bit effective block length
+    (a) 256 bit block length, 128 bit effective block length
+    (a) 168 bit block length, 112 bit effective block length
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. DES suffers from \_\_\_\_\_\_\_\_\_\_.
+    (a) Inefficient encryption
+    (a) Short block length
+    (a) Long key length
+    (a) B and C
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. 3DES works by doing which of the following?
+    (a) $D_{k_3}(D_{k_2}(E_{k_1}(m)))$
+    (a) $D_{k_3}(E_{k_2}(D_{k_1}(m)))$
+    (a) $E_{k_3}(E_{k_2}(E_{k_1}(m)))$
+    (a) $E_{k_3}(D_{k_2}(E_{k_1}(m)))$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. 2DES works by doing which of the following?
+    (a) $E_{k_2}(D_{k_1}(m))$
+    (a) $D_{k_2}(D_{k_1}(m))$
+    (a) $E_{k_2}(E_{k_1}(m))$
+    (a) $D_{k_2}(E_{k_1}(m))$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. In 3DES, which of the following are possible?
+    (a) $k_1 \ne k_2 \ne k_3$
+    (a) $k_1 = k_2 = k_3$
+    (a) $k_1 \ne k_2, k_2 = k_3$
+    (a) A and B
+    (a) All of the above
+\vskip 1em
+1. According to the PKCS#7 padding scheme we saw in class, how would you pad `ae 12 64` with a block length of 6 bytes?
+    (a) `ae 12 64 06 06 06`
+    (a) `06 06 06 ae 12 64`
+    (a) `ae 12 64 03 03 03`
+    (a) `03 03 03 ae 12 64`
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. According to the PKCS#7 padding scheme we saw in class, how would you pad `ae 12 64` with a block length of 3 bytes?
+    (a) `ae 12 64`
+    (a) `03 03 03 ae 12 64`
+    (a) `ae 12 64 03 03 03`
+    (a) `ae 12 64 00 00 00`
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Ciphertext stealing works with which of the following modes of operation?
+    (a) CBC
+    (a) GCM
+    (a) ECB
+    (a) CTR
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which mode of operation has no semantic security?
+    (a) CBC
+    (a) GCM
+    (a) ECB
+    (a) CTR
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. CTR mode generates keys by \_\_\_\_\_\_\_\_\_\_.
+    (a) Encrypting an increasing value each time, starting at zero
+    (a) Incrementing and then encrypting a nonce each time
+    (a) Decrementing a nonce, encrypting it, and then incrementing it each time
+    (a) Encrypting a nonce and then incrementing it each time
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. How does CTR mode generate ciphertext?
+    (a) Each block of plaintext is XORed with the encrypted nonce
+    (a) Each plaintext block is encrypted using the nonce as a key
+    (a) Each block of plaintext is XORed with the previous ciphertext and then encrypted
+    (a) Each plaintext block is run through the encryption algorithm and then XORed with the nonce
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following describes ECB?
+    (a) Block length does not matter
+    (a) Encrypt each block individually
+    (a) Computationally IND-CPA secure
+    (a) ECB is technically a stream cipher
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following describes CBC?
+    (a) Suffers from a lack of diffusion
+    (a) Vulnerable to meet in the middle attacks
+    (a) XOR plaintext block with previous ciphertext block and then encrypt
+    (a) Does not require padding
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. In ciphertext stealing we do which of the following?
+    (a) Pad last block with `0`s until it meets block length, encrypt as normal, then swap first and last blocks
+    (a) Pad last block with `1`s until it meets block length, encrypt as normal, then swap first and last blocks
+    (a) Pad last block with `1`s until it meets block length, encrypt as normal, then swap last two blocks
+    (a) Pad last block with `0`s until it meets block length, encrypt as normal, then swap last two blocks
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is $33^{89} \bmod 45$?
+    (a) 33
+    (a) 37
+    (a) $33^{44} \bmod 45$
+    (a) 1
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following is in the correct order of reducibility?
+    (a) $\text{DL} > \text{DDH} > \text{CDH}$
+    (a) $\text{DL} > \text{CDH} > \text{DDH}$
+    (a) $\text{DDH} > \text{CDH} > \text{DL}$
+    (a) $\text{CDH} > \text{DDH} > \text{DL}$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following describes the CDH problem?
+    (a) Given $(p, g, g^a, g^b, n)$, try to determine if $n = g^{ab} \bmod p$ or $n = g^x \bmod p$
+    (a) Given $(p, g, g^a)$, try to find $a \bmod p$.
+    (a) Given $(p, g, g^a, g^b)$, try to compute $g^{ab} \bmod p$
+    (a) Given $(p, g, g^a, b)$, try to compute $g^{ab} \bmod p$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following describes the DDH problem?
+    (a) Given $(p, g, g^a, g^b, n)$, try to determine if $n = g^{ab} \bmod p$ or $n = g^x \bmod p$
+    (a) Given $(p, g, g^a)$, try to find $a \bmod p$.
+    (a) Given $(p, g, g^a, g^b)$, try to compute $g^{ab} \bmod p$
+    (a) Given $(p, g, g^a, b)$, try to compute $g^{ab} \bmod p$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
-    (a) None of the above
-\vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
-    (a) None of the above
-\vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
-    (a) None of the above
-\vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following describes the DL problem?
+    (a) Given $(p, g, g^a, g^b, n)$, try to determine if $n = g^{ab} \bmod p$ or $n = g^x \bmod p$
+    (a) Given $(p, g, g^a)$, try to find $a \bmod p$.
+    (a) Given $(p, g, g^a, g^b)$, try to compute $g^{ab} \bmod p$
+    (a) Given $(p, g, g^a, b)$, try to compute $g^{ab} \bmod p$
     (a) None of the above
 \vskip 1em
 1. This is a template question?

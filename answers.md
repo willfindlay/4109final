@@ -20,14 +20,14 @@ Try them yourself first.
 ## Custom Questions
 
  1. E
- 2.
- 3.
- 4.
- 5.
- 6.
- 7.
- 8.
- 9.
+ 2. C
+ 3. B
+ 4. D
+ 5. A
+ 6. D
+ 7. C
+ 8. A
+ 9. C
 10.
 11.
 12.
