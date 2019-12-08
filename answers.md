@@ -43,110 +43,109 @@ Try them yourself first.
  22. C
  23. C
  24. E, it could be any of them
- 25.
- 26.
- 27.
- 28.
- 29.
- 30.
- 31.
- 32.
- 33.
- 34.
- 35.
- 36.
- 37.
- 38.
- 39.
- 40.
- 41.
- 42.
- 43.
- 44.
- 45.
- 46.
- 47.
- 48.
- 49.
- 50.
- 51.
- 52.
- 53.
- 54.
- 55.
- 56.
- 57.
- 58.
- 59.
- 60.
- 60.
- 61.
- 62.
- 63.
- 64.
- 65.
- 66.
- 67.
- 68.
- 69.
- 70.
- 71.
- 72.
- 73.
- 74.
- 75.
- 76.
- 77.
- 78.
- 79.
- 80.
- 81.
- 82.
- 83.
- 84.
- 85.
- 86.
- 87.
- 88.
- 89.
- 90.
- 91.
- 92.
- 93.
- 94.
- 95.
- 96.
- 97.
- 98.
- 99.
-100.
-101.
-102.
-103.
-104.
-105.
-106.
-107.
-108.
-109.
-110.
-111.
-112.
-113.
-114.
-115.
-116.
-117.
-118.
-119.
-120.
-121.
-122.
-123.
-124.
-125.
-126.
-127.
-128.
-129.
-130.
+ 25. C
+ 26. C
+ 27. C
+ 28. D
+ 29. B, also short key length, but not long key length
+ 30. D
+ 31. C
+ 32. E
+ 33. C
+ 34. C
+ 35. A
+ 36. C
+ 37. B
+ 38. A
+ 39. B
+ 40. C
+ 41. D
+ 42. A
+ 43. B
+ 44. C
+ 45. A
+ 46. B
+ 47. E
+ 48. A
+ 49. D
+ 50. C
+ 51. C
+ 52. C
+ 53. D
+ 54. A
+ 55. C
+ 56. D
+ 57. A
+ 58. C
+ 59. A
+ 60. D
+ 61. B
+ 62. C
+ 63. A
+ 64. B
+ 65. A
+ 66. A
+ 67. C
+ 68. C
+ 69. E, WCR and SPR are same thing
+ 70. D
+ 71. B
+ 72. A
+ 73. C, we can find some m' that has the same hash as m, but we can't pick it
+ 74. A, we can pick from any of multiple m' that has same hash as m, but can't pick absolutely anything
+ 75. D, just send first x bytes of m as the tag
+ 76. B, it wouldn't have the compression property, and therefore wouldn't be a real hash function
+ 77. D
+ 78. B
+ 79. A
+ 80. D
+ 81. A, technically it has compression and ease of computation
+ 82. B, no security properties met
+ 83. B, no compression
+ 84. B, same as 82
+ 85. B
+ 86. D
+ 87. C
+ 88. C, it no longer uses Merkle-Damgard
+ 89. C
+ 90. B
+ 91. D
+ 92. D
+ 93. E
+ 94. B
+ 95. A
+ 96. C
+ 97. B
+ 98. D
+ 99. B
+100. D
+101. A
+102. D
+103. A
+104. B
+105. A
+106. A
+107. A
+108. A
+109. A
+110. C
+111. D
+112. A
+113. A
+114. A
+115. B
+116. D
+117. A
+118. B
+119. A
+120. A
+121. A
+122. D
+123. B
+124. D
+125. C
+126. B
+127. D
+128. C
+129. B
+130. A

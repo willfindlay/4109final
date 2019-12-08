@@ -493,7 +493,7 @@ For the next two questions, consider the following connection encrypted line:
     (a) CTR
     (a) None of the above
 \vskip 1em
-1. CTR mode generates keys by \_\_\_\_\_\_\_\_\_\_.
+1. CTR mode generates its XOR value by \_\_\_\_\_\_\_\_\_\_.
     (a) Encrypting an increasing value each time, starting at zero
     (a) Incrementing and then encrypting a nonce each time
     (a) Decrementing a nonce, encrypting it, and then incrementing it each time
@@ -501,7 +501,7 @@ For the next two questions, consider the following connection encrypted line:
     (a) None of the above
 \vskip 1em
 1. How does CTR mode generate ciphertext?
-    (a) Each block of plaintext is XORed with the encrypted nonce
+    (a) Each block of plaintext is XORed with the encrypted nonce and counter
     (a) Each plaintext block is encrypted using the nonce as a key
     (a) Each block of plaintext is XORed with the previous ciphertext and then encrypted
     (a) Each plaintext block is run through the encryption algorithm and then XORed with the nonce
@@ -1027,14 +1027,14 @@ For the next 5 questions, consider the following connection encrypted line from 
     (a) A random exponent
     (a) None of the above
 \vskip 1em
-1. How many keys are needed for $n$ parties to communicate with each other using secret key crypto without a PKI?
+1. How many copies of keys are needed for $n$ parties to communicate with each other using secret key crypto without a PKI?
     (a) $O(n^2)$
     (a) $O(n \log_2 n)$
     (a) $O(n)$
     (a) $O(\log_2 n)$
     (a) None of the above
 \vskip 1em
-1. How many keys are needed for $n$ parties to communicate with each other using public key crypto without a PKI?
+1. How many copies of keys are needed for $n$ parties to communicate with each other using public key crypto without a PKI?
     (a) $O(n^2)$
     (a) $O(n \log_2 n)$
     (a) $O(n)$
