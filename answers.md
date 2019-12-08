@@ -19,30 +19,30 @@ Try them yourself first.
 
 ## Custom Questions
 
-  1.
-  2.
-  3.
-  4.
-  5.
-  6.
-  7.
-  8.
-  9.
- 10.
- 11.
- 12.
- 13.
- 14.
- 15.
- 16.
- 17.
- 18.
- 19.
- 20.
- 21.
- 22.
- 23.
- 24.
+  1. E, these are all security flaws and there are many more
+  2. D
+  3. B, allows KPA
+  4. D
+  5. A
+  6. D
+  7. C
+  8. B
+  9. C
+ 10. D
+ 11. A
+ 12. D
+ 13. D
+ 14. A
+ 15. C
+ 16. E
+ 17. E
+ 18. B, polynomially bounded adversaries fall under computational security
+ 19. C
+ 20. A
+ 21. B
+ 22. C
+ 23. C
+ 24. E, it could be any of them
  25.
  26.
  27.

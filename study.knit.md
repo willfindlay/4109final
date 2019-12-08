@@ -19,12 +19,7 @@ output:
         keep_tex: false
         pandoc_args: ["--listings"]
 ---
-```{r,include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-options(kableExtra.latex.load_packages = FALSE)
-library(kableExtra)
-library(lubridate)
-```
+
 <!-- Setup -->
 \pagestyle{fancy}
 \setlength{\headheight}{15pt}
