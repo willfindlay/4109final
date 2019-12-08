@@ -1564,7 +1564,7 @@ File: english.lbx 2019/08/31 v3.13a biblatex localization (PK/MW)
 )
 \@quotelevel=\count495
 \@quotereset=\count496
-No file study.aux.
+(./study.aux)
 \openout1 = `study.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
@@ -1649,6 +1649,7 @@ Package hyperref Info: Link coloring ON on input line 82.
 LaTeX Info: Redefining \ref on input line 82.
 LaTeX Info: Redefining \pageref on input line 82.
 LaTeX Info: Redefining \nameref on input line 82.
+(./study.out) (./study.out)
 \@outlinefile=\write5
 \openout5 = `study.out'.
 
@@ -1658,8 +1659,8 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `study.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'study.bbl' not found.
-No file study.bbl.
+Package biblatex Info: ... file 'study.bbl' found.
+(./study.bbl)
 Package biblatex Info: Reference section=0 on input line 82.
 Package biblatex Info: Reference segment=0 on input line 82.
 \c@lstlisting=\count497
@@ -1762,25 +1763,22 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./study.toc)
 \tf@toc=\write6
 \openout6 = `study.toc'.
 
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-[1]
+[1] (./study.lof)
 \tf@lof=\write7
 \openout7 = `study.lof'.
 
-[2]
+[2] (./study.lot)
 \tf@lot=\write8
 \openout8 = `study.lot'.
 
-[3]
-
-Package hyperref Warning: old lol file detected, not used; run LaTeX again.
-
+[3] (./study.lol)
 \tf@lol=\write9
 \openout9 = `study.lol'.
 
@@ -1810,35 +1808,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 2752.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2752.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2752.
 
-
-Package rerunfilecheck Warning: File `study.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `study.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  ABBF310194B4D72CA98681E414B6F28D;2568.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                study
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `study.out' has not changed.
+(rerunfilecheck)             Checksum: ABBF310194B4D72CA98681E414B6F28D;2568.
 Package logreq Info: Writing requests to 'study.run.xml'.
 \openout1 = `study.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2752.
  ) 
 Here is how much of TeX's memory you used:
- 49923 strings out of 492167
- 909425 string characters out of 6131558
- 1468575 words of memory out of 5000000
- 52677 multiletter control sequences out of 15000+600000
+ 49958 strings out of 492167
+ 909829 string characters out of 6131558
+ 1468416 words of memory out of 5000000
+ 52696 multiletter control sequences out of 15000+600000
  607344 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,11n,71p,1194b,1312s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1860,10 +1841,10 @@ usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fon
 ts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt
 12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on study.pdf (30 pages, 374415 bytes).
+Output written on study.pdf (30 pages, 376732 bytes).
 PDF statistics:
- 1260 PDF objects out of 1440 (max. 8388607)
- 1197 compressed objects within 12 object streams
+ 1335 PDF objects out of 1440 (max. 8388607)
+ 1271 compressed objects within 13 object streams
  879 named destinations out of 1000 (max. 500000)
- 16397 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 16541 words of extra memory for PDF output out of 17280 (max. 10000000)
 
