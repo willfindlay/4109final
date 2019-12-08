@@ -528,10 +528,10 @@ For the next two questions, consider the following connection encrypted line:
     (a) Pad last block with `0`s until it meets block length, encrypt as normal, then swap last two blocks
     (a) None of the above
 \vskip 1em
-1. What is $33^{89} \bmod 45$?
-    (a) 33
+1. What is $20^{73} \bmod 37$?
+    (a) 20
     (a) 37
-    (a) $33^{44} \bmod 45$
+    (a) $20^{36} \bmod 37$
     (a) 1
     (a) None of the above
 \vskip 1em
