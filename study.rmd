@@ -839,138 +839,304 @@ how many of the three properties of cryptographic hash functions are broken?
     (a) They allow universal forgeries
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following is considered immune to length extension attacks?
+    (a) SHA-1
+    (a) SHA-2
+    (a) SHA-3
+    (a) All of the above
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following uses a sponge construction?
+    (a) SHA-1
+    (a) SHA-2
+    (a) SHA-3
+    (a) All of the above
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. A MAC is which of the following?
+    (a) A five-tuple $(G,S,V,E,D)$
+    (a) A triple of efficient algorithms, $(G,S,V)$
+    (a) A triple of efficient algorithms, $(G,E,D)$
+    (a) A hash function without a key
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following is true about a CBC-MAC?
+    (a) It has no compression property, unlike HMACs
+    (a) It was invented by the CBC for tagging their broadcast data
+    (a) It works by taking the entire ciphertext from a block cipher in CBC mode
+    (a) It works by taking the last ciphertext block from a block cipher in CBC mode
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. If you had a CBC-mode block cipher that produced `101 010 111 010 111 010` and it had a block length of 3 bits,
+what would be your CBC-MAC tag?
+    (a) `010 111 010`
+    (a) `101`
+    (a) `101 010 111 010 111 010`
+    (a) `010`
+    (a) Not enough information
+\vskip 1em
+1. How does an EMAC work when the key for the original block cipher was $k_1$?
+    (a) $E_{k_1}(c_\ell)$
+    (a) $E_{k_2}(c_\ell)$
+    (a) $E_{k_1}(E^{-1}_{k_2}(c_\ell))$
+    (a) $E^{-1}_{k_1}(c_\ell)$
+    (a) Either B or C
+    (a) Either A or C
+\vskip 1em
+1. What makes an EMAC better than a CBC-MAC?
+    (a) It adds extra security by adding diffusion
+    (a) It allows arbitrary length messages
+    (a) It has a faster runtime
+    (a) It is actually worse because it is less efficient
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is the preferred method of authenticated encryption?
+    (a) Encrypt then MAC
+    (a) Encrypt and MAC
+    (a) Encrypt then hash
+    (a) MAC then encrypt
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. How does HMAC work?
+    \vskip .2em
+    (a) $H\Big((k \oplus \text{opad}) || H\big((m \oplus \text{ipad})\big)\Big)$
+    \vskip .2em
+    (a) $H\Big((m \oplus \text{opad}) || H\big((k \oplus \text{ipad})\big)\Big)$
+    \vskip .2em
+    (a) $H\Big((k \oplus \text{opad}) || H\big((k \oplus \text{ipad}) || m\big)\Big)$
+    \vskip .2em
+    (a) $H\Big((k \oplus \text{opad}) || H\big((k \oplus \text{ipad})\big) || m\Big)$
+    \vskip .7em
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. In an HMAC, the security is based on what?
+    (a) The size of $m$
+    (a) The underlying hash function used
+    (a) The difference between opad and ipad
+    (a) The number of times we run the algorithm
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+
+For the next 5 questions, consider the following connection encrypted line from \url{rbc.com}:
+\begin{center}
+\lstinline{TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, 256 bit keys, TLS 1.2}
+\end{center}
+
+98. What is the security protocol?
+    (a) TLS 1.3
+    (a) RSA
+    (a) TLS ECDHE
+    (a) TLS 1.2
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What block cipher is used to encrypt the message stream?
+    (a) AES with 128 bit key and 256 bit block length
+    (a) AES with 256 bit key and 256 bit block length
+    (a) SHA with 384 bit block length and 256 bit key length
+    (a) AES with 256 bit key and 128 bit block length
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is the authentication scheme?
+    (a) ElGamal public key encryption scheme
+    (a) ElGamal signature scheme
+    (a) RSA public key encryption scheme
+    (a) RSA signature scheme
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is the mode of operation for the block cipher?
+    (a) GCM
+    (a) CTR
+    (a) CBC
+    (a) ECB
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is used to generate the MAC tag?
+    (a) SHA-3 with 384 bit output
+    (a) SHA-1 with 384 bit output
+    (a) SHA-3 with 84 bit output
+    (a) SHA-2 with 384 bit output
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is a digital signature scheme?
+    (a) Three-tuple $(G,S,V)$
+    (a) Five-tuple $(G,E,D,S,V)$
+    (a) Three-tuple $(G,E,D)$
+    (a) A way or securely writing your name on a PDF
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. In a DSS, the signing key is \_\_\_\_\_\_\_\_\_\_ and the verifying key is \_\_\_\_\_\_\_\_\_\_?
+    (a) private, private
+    (a) private, public
+    (a) public, public
+    (a) public, private
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following describes the generation algorithm in RSA DSS?
+    (a) Take $N = pq$ and find $e, d$ such that $ed = 1 \bmod \phi(N)$
+    (a) Generate a random $e, d$
+    (a) Take $N$ as some large composite number and find $e, d$ its prime factors
+    (a) Generate a random $N$ and take $e = \phi(N)$ and $d = N/e$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following describes the signing algorithm in RSA DSS (assume public exponent is $e$ and private is $d$)?
+    (a) Compute $M = H(m)$ and $\sigma = M^d \bmod N$
+    (a) Compute $M = H(m)$ and $\sigma = M^e \bmod N$
+    (a) Compute $M = H(m)$ and $\sigma = M^d \bmod \phi(N)$
+    (a) Compute $M = H(m)$ and $\sigma = M^e \bmod \phi(N)$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following describes the verifying algorithm in RSA DSS?
+    (a) Compute $M = H(m)$ and check if $\sigma^e \equiv M \bmod N$
+    (a) Compute $M = H(m)$ and check if $\sigma^d \equiv M \bmod N$
+    (a) Compute $M = H(m)$ and check if $\sigma^d \equiv M \bmod \phi(N)$
+    (a) Compute $M = H(m)$ and check if $\sigma^e \equiv M \bmod \phi(N)$
     (a) None of the above
 \vskip 1em
-1. This is a template question?
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following is the secret key in ElGamal DSS?
+    (a) $x$
+    (a) $g, x, p$
+    (a) $g, x$
+    (a) $g^x$
     (a) None of the above
+\vskip 1em
+1. Which of the following is the public key in ElGamal DSS?
+    (a) $g, g^x, p$
+    (a) $g, p$
+    (a) $x$
+    (a) $g, x, p$
+    (a) None of the above
+\vskip 1em
+1. How do you verify a signature in ElGamal DSS?
+    (a) Check if $H(m)^g = (g^x)^rr^s \bmod p$
+    (a) Check if $g^{H(m)} = xr^s \bmod p$
+    (a) Check if $g^{H(m)} = (g^x)^rr^s \bmod p$
+    (a) Check if $g^{H(m)} = x^rr^s \bmod p$
+    (a) None of the above
+\vskip 1em
+1. The security of the ElGamal signature scheme relies on which of the following?
+    (a) Computational DH
+    (a) Decisional DH
+    (a) Factoring large numbers mod $p$
+    (a) Discrete log problem
+    (a) None of the above
+\vskip 1em
+1. What is $g$ in the ElGamal signature scheme?
+    (a) A generator in $\mathbb{Z}_p^*$
+    (a) A large prime number
+    (a) A random base
+    (a) A random exponent
+    (a) None of the above
+\vskip 1em
+1. How many keys are needed for $n$ parties to communicate with each other using secret key crypto without a PKI?
+    (a) $O(n^2)$
+    (a) $O(n \log_2 n)$
+    (a) $O(n)$
+    (a) $O(\log_2 n)$
+    (a) None of the above
+\vskip 1em
+1. How many keys are needed for $n$ parties to communicate with each other using public key crypto without a PKI?
+    (a) $O(n^2)$
+    (a) $O(n \log_2 n)$
+    (a) $O(n)$
+    (a) $O(\log_2 n)$
+    (a) None of the above
+\vskip 1em
+1. What does a PKI do?
+    (a) Allows you to quickly share secret keys
+    (a) Allows you to check which public key belongs to whom
+    (a) Allows you to quickly generate public keys
+    (a) Allows you to communicate securely without cryptography
+    (a) None of the above
+\vskip 1em
+1. Which of the following is **not** an example of a PKI?
+    (a) WoT
+    (a) sPKI
+    (a) CA
+    (a) TLS
+    (a) All of the above **are** examples of PKIs
+\vskip 1em
+1. CAs are generally presented as a hierarchy.
+    (a) True
+    (a) False
+\vskip 1em
+1. Self-signing a certificate at the top level of a hierarchy is generally good practice.
+    (a) True
+    (a) False
+\vskip 1em
+1. In a web of trust, you generally sign your own keys.
+    (a) True
+    (a) False
+\vskip 1em
+1. In a web of trust, other users generally sign your keys.
+    (a) True
+    (a) False
+\vskip 1em
+1. How many signatures do you need to trust to accept a key in a web of trust?
+    (a) At least 1
+    (a) None
+    (a) At least $n^2/2$ where $n$ is the number of WoT members
+    (a) At least $n/2$ where $n$ is the number of WoT members
+    (a) None of the above
+\vskip 1em
+1. In a $(4,8)$ secret sharing scheme, how many shares do we need to fully reconstruct the secret?
+    (a) 8
+    (a) 2
+    (a) 24
+    (a) 4
+    (a) None of the above
+\vskip 1em
+1. What is one caveat of Threshold ElGamal?
+    (a) It allows existential forgeries of the secret shares
+    (a) It requires a trusted third party
+    (a) It has no caveats
+    (a) It is much slower than Shamir Secret Sharing for high thresholds
+    (a) None of the above
+\vskip 1em
+1. Which of the following does Shamir Secret Sharing rely on?
+    (a) The difficulty of factoring the modulus
+    (a) A trusted third party
+    (a) Lagrange interpolation at $f(1)$
+    (a) Lagrange interpolation at $f(0)$
+    (a) None of the above
+\vskip 1em
+1. What is completeness in a zero knowledge proof?
+    (a) The verifier will learn the prover's knowledge
+    (a) The prover will not convince the verifier if they are not telling the truth
+    (a) The prover will convince the verifier if they are telling the truth
+    (a) The verifier does not learn anything about the prover's knowledge
+    (a) None of the above
+\vskip 1em
+1. What is soundness in a zero knowledge proof?
+    (a) The verifier will learn the prover's knowledge
+    (a) The prover will not convince the verifier if they are not telling the truth
+    (a) The prover will convince the verifier if they are telling the truth
+    (a) The verifier does not learn anything about the prover's knowledge
+    (a) None of the above
+\vskip 1em
+1. What is zero-knowledgeness in a zero knowledge proof?
+    (a) The verifier will learn the prover's knowledge
+    (a) The prover will not convince the verifier if they are not telling the truth
+    (a) The prover will convince the verifier if they are telling the truth
+    (a) The verifier does not learn anything about the prover's knowledge
+    (a) None of the above
+\vskip 1em
+1. What is the binding property in a commitment scheme?
+    (a) The statement should remain revealed until the user hides it
+    (a) The statement should remain hidden until the user reveals it
+    (a) When a user commits to a statement, they cannot change it
+    (a) A user cannot change whom they are communicating with after committing to it
+    (a) None of the above
+\vskip 1em
+1. What is the hiding property in a commitment scheme?
+    (a) The statement should remain revealed until the user hides it
+    (a) The statement should remain hidden until the user reveals it
+    (a) When a user commits to a statement, they cannot change it
+    (a) A user cannot change whom they are communicating with after committing to it
+    (a) None of the above
+\vskip 1em
+1. A commitment scheme can be build with cryptographic hash functions.
+    (a) True
+    (a) False
 \vskip 1em
 
 <!-- References -->
