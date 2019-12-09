@@ -90,8 +90,37 @@ Zero Knowledge Proofs & ($5\%$) &2\\
 
 # Midterm 1
 
-## Classical Crypto
+## Symmetric-Key Encryption
+- Tuple (P,C,K,E,D)
+    - P: plaintext
+    - C: Ciphertext
+    - K: Keyspace
+    - E: $e_{k}$: P -> C
+    - D: $d_{k}$: C ->P
+- Caesar Cipher
+    - $E_{k}$(m)=(m+k) mod 26
+    - $D_{k}$(c)=(c-k) mod 26
+- Affine Cipher
+    - K=(a,b), gcd(a,26)=1
+    - for k=(a,b) in K
+        - $E_{k}$(m)=(am+b) mod 26
+        - $D_{k}$(c)=$a^{-1}$(c-b) mod 26
+- Substitution Cipher
+    - A={a,b,c,.....,x,y,z}
+    - K is set of all permutations of A
+    - for π in K
+    - $E_{k}$(m)=πm
+    - $D_{k}$(c)=$π^{-1}$m
+- Vigenere cipher(polyalphabetic cipher)
+    - K=$(Z_{26})^{l}$
+    - for k=($k_{1}$,$k_{2}$,...,$k_{l}$) and m=($m_{1}$,$m_{2}$,...,$m_{l}$) in P
+    - $E_{k}$($m_{1}$,$m_{2}$,...,$m_{l}$)=($m_{1}$+$k_{1}$,$m_{2}$+$k_{2}$,...,$m_{l}$+$k_{l}$) mod 26
+    - $D_{k}$($c_{1}$,$c_{2}$,...,$c_{l}$)=($c_{1}$-$k_{1}$,$c_{2}$-$k_{2}$,...,$c_{l}$-$k_{l}$) mod 26
 
+## Block Ciphers
+
+## Stream Ciphers
+  
 ## Secret Key Crypto
 
 ## Security Models and Goals
