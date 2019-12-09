@@ -3,6 +3,8 @@
 **WARNING:** This contains answers to all the multiple choice questions in [the practice document](./study.pdf).
 Try them yourself first.
 
+If you find any mistakes, please start an issue or make a PR.
+
 ## Provided Questions
 
 
