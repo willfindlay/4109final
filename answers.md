@@ -13,7 +13,7 @@ If you find any mistakes, please open an issue or make a PR.
  3. C, take exponent mod p-1
  4. D, count the spaces between each letter to eliminate other possibilities
  5. A, diffusion. Confusion would be when many bits of ciphertext depend on each bit of the key
- 6. E, as far as I know, collisions in ECB don't do anything special
+ 6. A, two blocks that are the same means two plaintext blocks are the same
  7. C, people who have the secret key for a MAC can tell if a MAC was encrypted with a different key
  8. B, we need to append a full block of padding, each byte should be how many bytes we appended
  9. B, RSA
