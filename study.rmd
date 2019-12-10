@@ -90,7 +90,7 @@ Zero Knowledge Proofs & ($5\%$) &2\\
 
 # Midterm 1
 
-## Symmetric-Key Encryption
+##  Symmetric-Key Encryption Definition
 
 - Tuple (P,C,K,E,D)
     - $P$: Plaintext space
@@ -98,6 +98,9 @@ Zero Knowledge Proofs & ($5\%$) &2\\
     - $K$: Keyspace
     - $E$: $e_{k}:\enspace P \rightarrow C$
     - $D$: $d_{k}:\enspace C \rightarrow P$
+
+## Classical Crypto
+
 - Caesar Cipher
     - $E_{k}(m)=(m+k) mod 26$
     - $D_{k}(c)=(c-k) mod 26$
@@ -118,11 +121,9 @@ Zero Knowledge Proofs & ($5\%$) &2\\
     - $E_{k}(m_{1},m_{2},...,m_{l})=(m_{1}+k_{1},m_{2}+k_{2},...,m_{l}+k_{l}) \bmod 26$
     - $D_{k}(c_{1},c_{2},...,c_{l})=(c_{1}-k_{1},c_{2}-k_{2},...,c_{l}-k_{l}) \bmod 26$
 
-### Block Ciphers
+## Block Ciphers
 
-### Stream Ciphers
-
-### Secret Key Crypto
+## Stream Ciphers
 
 ## Security Models and Goals
 
