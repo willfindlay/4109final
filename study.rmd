@@ -126,6 +126,33 @@ Zero Knowledge Proofs & ($5\%$) &2\\
 
 ## Security Models and Goals
 
+### Attack Models
+
+- Ciphertext-only Attack (Passive attack)
+    - Adversary is given C but not M
+- Known-plaintext Attack (Passive attack)
+    - Adversary knows one or more plaintext-ciphertext(M,C) pairs
+- Chosen-plaintext attack(Active attack)
+    - Adversary chooses M and is given C
+- Chosen-ciphertext attack (Active attack)
+    - Adversary chooses C and is given M
+
+### Security Levels
+
+- Information-theoretic security
+    - Adversary has no limits to their computational resources
+- Complexity-theoretic security
+    - Adversary has resources that are polynomial in the security parameter
+- Computational security (Practical Security)
+    - Adversary has n real computers at their disposal (computationally bounded)
+
+### Security Goals
+
+- Indistinguishability
+    - Ciphertexts should be indistinguishable from random strings
+- Non-Malleability
+    - Can't modify C so that it decrypts to a new P that is meaningfully related to the original
+
 # Midterm 2
 
 ## Public Key Crypto
