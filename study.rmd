@@ -91,6 +91,7 @@ Zero Knowledge Proofs & ($5\%$) &2\\
 # Midterm 1
 
 ## Symmetric-Key Encryption
+
 - Tuple (P,C,K,E,D)
     - P: plaintext
     - C: Ciphertext
@@ -117,11 +118,11 @@ Zero Knowledge Proofs & ($5\%$) &2\\
     - $E_{k}$($m_{1}$,$m_{2}$,...,$m_{l}$)=($m_{1}$+$k_{1}$,$m_{2}$+$k_{2}$,...,$m_{l}$+$k_{l}$) mod 26
     - $D_{k}$($c_{1}$,$c_{2}$,...,$c_{l}$)=($c_{1}$-$k_{1}$,$c_{2}$-$k_{2}$,...,$c_{l}$-$k_{l}$) mod 26
 
-## Block Ciphers
+### Block Ciphers
 
-## Stream Ciphers
+### Stream Ciphers
   
-## Secret Key Crypto
+### Secret Key Crypto
 
 ## Security Models and Goals
 
