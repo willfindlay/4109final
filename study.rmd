@@ -125,8 +125,63 @@ Zero Knowledge Proofs & ($5\%$) &2\\
 
 ## Stream Ciphers
 
-## Security Models and Goals
+## Symmetric Key Attack Models/Security Levels/Security Goals
 
+### Attack Models
+
+- Ciphertext-only Attack (Passive attack)
+    - Adversary is given C but not M
+- Known-plaintext Attack (Passive attack)
+    - Adversary knows one or more plaintext-ciphertext(M,C) pairs
+- Chosen-plaintext attack(Active attack)
+    - Adversary chooses M and is given C
+- Chosen-ciphertext attack (Active attack)
+    - Adversary chooses C and is given M
+
+### Security Levels
+
+- Information-theoretic security
+    - Adversary has no limits to their computational resources
+- Complexity-theoretic security
+    - Adversary has resources that are polynomial in the security parameter
+- Computational security (Practical Security)
+    - Adversary has n real computers at their disposal (computationally bounded)
+
+### Security Goals
+
+- Indistinguishability
+    - Ciphertexts should be indistinguishable from random strings
+- Non-Malleability
+    - Can't modify C so that it decrypts to a new P that is meaningfully related to the original
+
+## Public Key Crypto Security Levels
+- IND-CPA
+    - indistinguishability given the adversary can encrypt arbitrary plaintext
+- IND-CCA1
+    - indistinguishability given the adversary can attempt to decrypt chosen ciphertext
+- IND-CCA2
+    - indistinguishability given the adversary can attempt to decrypt chosen ciphertext and adapt choices base don results
+
+## MACs Forgery 
+- existential forgery
+    - there exists some forgery such that m' can be sent with the tag of m
+- selective forgery
+    - the attacker can choose some m' that can be sent with the tag of m
+- universal forgery
+    - the attacker can send any message they want with a valid tag
+
+## Security of Digital signatures, MACs, hash
+- Digital signatures
+    - data integrity (to anyone)
+    - data origin authentication (to anyone)
+    - non-repudiation
+- MACs
+    - data integrity (to other party with secret key)
+    - data origin authentication (to other party with secret key)
+- Hash
+    - data integrity (to anyone)
+
+    
 # Midterm 2
 
 ## Public Key Crypto
