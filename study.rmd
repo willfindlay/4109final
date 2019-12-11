@@ -65,9 +65,9 @@ N.b.\ total number of questions is 44, but total approximate only adds up to 39.
 \hline
 Classical Crypto & ($10\%$) & 4\\
 \hline
-Secret Key Crypto & ($10\%$) & 4\\
+Secret Key Crypto & ($18\%$) & 4\\
 \hline
-Security Models and Goals & ($18\%$) & 8\\
+Security Models and Goals & ($10\%$) & 8\\
 \hline
 Public Key Crypto and Efficiency & ($15\%$) &7\\
 \hline
@@ -162,7 +162,7 @@ Zero Knowledge Proofs & ($5\%$) &2\\
 - IND-CCA2
     - indistinguishability given the adversary can attempt to decrypt chosen ciphertext and adapt choices base don results
 
-## MACs Forgery 
+## MACs Forgery
 - existential forgery
     - there exists some forgery such that m' can be sent with the tag of m
 - selective forgery
@@ -181,7 +181,7 @@ Zero Knowledge Proofs & ($5\%$) &2\\
 - Hash
     - data integrity (to anyone)
 
-    
+
 # Midterm 2
 
 ## Public Key Crypto
