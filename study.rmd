@@ -1302,6 +1302,27 @@ For the next 5 questions, consider the following connection encrypted line from 
     (a) a
     (a) None of the above
 \vskip 1em
+1. Consider the ElGamal signature scheme with public key (11,7,2). What is the private key x?
+    (a) 6
+    (a) 3
+    (a) 11
+    (a) 69
+    (a) None of the above
+\vskip 1em
+1. Consider the ElGamal signature scheme with public key (11,7,2). What is the signature?
+    (a) 6
+    (a) 3
+    (a) 4
+    (a) 69
+    (a) None of the above
+\vskip 1em
+1. Suppose we are using $\mathbb{Z}_{11}^{*}$ with g=6. What is the secret if Alice chooses the random exponent 5 and Bob chooses 3?
+    (a) 10
+    (a) $6^{5}$ mod 10
+    (a) 6
+    (a) $6^{5}$ mod 11
+    (a) Both A and D
+\vskip 1em
 
 <!-- References -->
 \clearpage
