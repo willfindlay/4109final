@@ -38,7 +38,7 @@ If you find any mistakes, please open an issue or make a PR.
  15. C
  16. E
  17. E
- 18. B, polynomially bounded adversaries fall under computational security
+ 18. B, polynomially bounded adversaries fall under complexity security
  19. C
  20. A
  21. B
