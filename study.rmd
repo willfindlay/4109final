@@ -1295,6 +1295,13 @@ For the next 5 questions, consider the following connection encrypted line from 
     (a) It offers no guarantees
     (a) None of the above
 \vskip 1em
+1. Which of the following is the secret in Threshold ElGamal?
+    (a) d
+    (a) $g^{a}$
+    (a) $g^{k}$
+    (a) a
+    (a) None of the above
+\vskip 1em
 
 <!-- References -->
 \clearpage
