@@ -1246,46 +1246,53 @@ For the next 5 questions, consider the following connection encrypted line from 
     (a) You can trust a signature from Alice if you trust Bob
     (a) None of the above
 \vskip 1em
-1.
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is one advantage of Threshold ElGamal over Shamir Secret Sharing?
+    (a) Shamir Secret Sharing can only be used once
+    (a) There is no advantage because these have nothing to do with each other
+    (a) Threshold ElGamal does not reveal the master secret
+    (a) Both A and C
     (a) None of the above
 \vskip 1em
-1.
-    (a)
-    (a)
-    (a)
-    (a)
+1. Suppose you were presented with a $(10,12)$ $(t,n)$-scheme. Which of the following is true?
+    (a) You need at least $\lceil12/10\rceil = 2$ people to compute the seceret
+    (a) You need at least 12 people to compute the secret
+    (a) You need at least 10 people to compute the secret
+    (a) It is impossible for exactly 11 people to compute the secret
     (a) None of the above
 \vskip 1em
-1.
-    (a)
-    (a)
-    (a)
-    (a)
+1. TLS consists of which of the following?
+    (a) A signing protocol and a verifying protocol
+    (a) An encryption protocol and a signing protocol
+    (a) A handshake protocol and communication protocol
+    (a) A handshake protocol and a record protocol
     (a) None of the above
 \vskip 1em
-1.
-    (a)
-    (a)
-    (a)
-    (a)
+1. What is wrong with textbook RSA?
+    (a) It is deterministic
+    (a) It is homomorphic
+    (a) It is weak to length extension attacks
+    (a) A and B
     (a) None of the above
 \vskip 1em
-1.
-    (a)
-    (a)
-    (a)
-    (a)
+1. How can we fix textbook RSA?
+    (a) Encrypt twice with two different public keys
+    (a) Introduce randomness through padding
+    (a) We can't, it's totally broken
+    (a) Make the modulus much larger
     (a) None of the above
 \vskip 1em
-1.
-    (a)
-    (a)
-    (a)
-    (a)
+1. Which of the following is true about commitment schemes?
+    (a) They can be both perfectly hiding and perfectly binding
+    (a) They are much weaker than secret sharing schemes
+    (a) They can be implemented with hash functions
+    (a) They are never information theoretic secure
+    (a) None of the above
+\vskip 1em
+1. The three-coloring zero knowledge proof offers what type of confidence guarantee?
+    (a) Computational
+    (a) Statistical
+    (a) Perfect
+    (a) It offers no guarantees
     (a) None of the above
 \vskip 1em
 
