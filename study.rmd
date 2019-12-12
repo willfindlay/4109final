@@ -1224,6 +1224,70 @@ For the next 5 questions, consider the following connection encrypted line from 
     (a) True
     (a) False
 \vskip 1em
+1. X.509 is which of the following?
+    (a) A fast method for factoring the RSA modulus given $d$
+    (a) A standard for public key cryptography
+    (a) A universal decryption algorithm
+    (a) A standard for PKIs
+    (a) None of the above
+\vskip 1em
+1. A root CA is expected so sign its own certificate.
+    (a) True
+    (a) False
+\vskip 1em
+1. A root CA requires implicit trust.
+    (a) True
+    (a) False
+\vskip 1em
+1. Bob sends you a $(m, \sigma)$ pair that says "Alice's public key is $a$". Which of following is true?
+    (a) You can trust a signature from Alice if Bob's signature is valid
+    (a) You cannot trust a signature from Alice
+    (a) You can trust a signature from Alice if and only if Bob has a valid signature and you trust Bob
+    (a) You can trust a signature from Alice if you trust Bob
+    (a) None of the above
+\vskip 1em
+1.
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1.
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1.
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1.
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1.
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
+1.
+    (a)
+    (a)
+    (a)
+    (a)
+    (a) None of the above
+\vskip 1em
 
 <!-- References -->
 \clearpage
