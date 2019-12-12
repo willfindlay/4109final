@@ -831,11 +831,11 @@ For the next two questions, consider the following connection encrypted line:
     (a) Hard to find $m$ given $H(m)$
     (a) None of the above
 \vskip 1em
-1. What type of forgery might you create given a hash function that has all security properties except second preimage resistance?
-    (a) Selective
-    (a) Perfect
-    (a) Existential
-    (a) Universal
+1. Which of the following is true?
+    (a) Second preimage resistance implies collision resistance
+    (a) Collision resistance implies preimage resistance
+    (a) Collision resistance implies second preimage resistance
+    (a) All of the above
     (a) None of the above
 \vskip 1em
 1. What type of forgery might you create given a hash function that has no collision resistance?

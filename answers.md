@@ -93,7 +93,7 @@ If you find any mistakes, please open an issue or make a PR.
  70. D
  71. B
  72. A
- 73. C, we can find some m' that has the same hash as m, but we can't pick it
+ 73. C
  74. A, we can pick from any of multiple m' that has same hash as m, but can't pick absolutely anything
  75. D, just send first x bytes of m as the tag
  76. B, it wouldn't have the compression property, and therefore wouldn't be a real hash function
