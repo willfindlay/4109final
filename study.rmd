@@ -241,7 +241,7 @@ Zero Knowledge Proofs & ($5\%$) &2\\
     (a) Indistinguishability
     (a) Unpredictability
     (a) Synchronicity
-    (a) A and B Get: Roll Constitution at Disadvantage
+    (a) A and B
     (a) None of the above
 \vskip 1em
 1. The security of RSA is believed to be based on...
